@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+    
+</head>
+<body>
+    <div class="container">
+        <form action="teste.html" method="POST" id="formulario">
+        
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required type="text">
+        
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required type="email">
+        
+            <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" 
+          oninput="validarSenha()" style="border: 1px solid gray;" placeholder="Insira sua senha" required type="password">
+          
+          <label for="data_de_nascimento">Data de nascimento:</label>
+            <input type="date" id="data_de_nascimento" name="data_de_nascimento" required type="date" >
+            <label for="sexo">Qual o seu gênero</label>
+            <select name="sexo" id="sexo">
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+            <label for="endereco">Insira seu CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="00000-000" onblur="pesquisacep(this.value);">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade">
+            <label for="endereco">Estado</label>
+            <select id="estados"></select>
+          <button type="button" class="mostrar" onclick="mostrarSenha()">Mostrar Senha</button>
+          <div id="senhaErro" style="color: red;"></div>
+          <br>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar Formulário">
+        </form>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

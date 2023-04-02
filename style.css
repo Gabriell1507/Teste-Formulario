@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #c4882e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0.8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    
+    
+}
+
+.container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px; /* Margem de 20 pixels */
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mostrar{
+    background-color: #ffffff; /* Cor de fundo */
+  color: #000000; /* Cor do texto */
+  border: 2px solid #040404; /* Borda */
+  border-radius: 5px; /* Arredondamento das bordas */
+  padding: 5px 10px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  margin: 5px;
+}
+
+.mostrar:hover{
+    background-color: #000000; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  border: 2px solid #040404; /* Borda */
+  border-radius: 5px; /* Arredondamento das bordas */
+  padding: 5px 10px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transition: 0.5s all ease;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s all ease;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
